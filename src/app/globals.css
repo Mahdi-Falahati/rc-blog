@@ -48,13 +48,13 @@ a {
   }
 }
 
-@media screen and(max-with:1280px) {
+@media screen and (max-with: 1280px) {
   .wrapper {
     max-width: 1024px;
   }
 }
 
-@media screen and(max-with:1224px) {
+@media screen and (max-with: 1224px) {
   .wrapper {
     max-width: 768px;
     padding-left: 40px;
@@ -62,19 +62,19 @@ a {
   }
 }
 
-@media screen and(max-with:768px) {
+@media screen and (max-with: 768px) {
   .wrapper {
     max-width: 640px;
   }
 }
 
-@media screen and(max-with:768px) {
+@media screen and (max-with: 768px) {
   .wrapper {
     max-width: 640px;
   }
 }
 
-@media screen and(max-with:640px) {
+@media screen and (max-with: 640px) {
   .wrapper {
     max-width: 475px;
   }
