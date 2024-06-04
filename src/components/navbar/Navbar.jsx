@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./navbar.module.css";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -11,6 +12,11 @@ export default function Navbar() {
         <Image src="/youtube.png" alt="youtube" width={24} height={24} />
       </div>
       <div className={styles.logo}>MahdiFalahati-Blog</div>
+      <div className={styles.links}>
+        <Link href="/">Home</Link>
+        <Link href="/">Contact</Link>
+        <Link href="/">About</Link>
+      </div>
     </div>
   );
 }
