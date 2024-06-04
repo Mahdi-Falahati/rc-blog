@@ -28,3 +28,37 @@
   font-size: 17px;
   align-items: center;
 }
+
+@media screen and (max-width: 1280px) {
+  .logo {
+    font-size: 27px;
+  }
+  .links {
+    gap: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    text-align: left;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .link {
+    display: none;
+  }
+  .links {
+    justify-content: end;
+  }
+}
