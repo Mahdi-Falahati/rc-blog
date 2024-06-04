@@ -1,4 +1,4 @@
-import styles from "themeToggle.module.css";
+import styles from "./themeToggle.module.css";
 
 export default function ThemeToggle() {
   return <div></div>;
