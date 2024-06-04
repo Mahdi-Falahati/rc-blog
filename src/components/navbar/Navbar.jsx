@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
+import ThemeToggle from "../themeToggle/ThemeToggle";
+import AuthLinks from "../authLinks/AuthLinks";
 
 export default function Navbar() {
   return (
@@ -13,9 +15,11 @@ export default function Navbar() {
       </div>
       <div className={styles.logo}>MahdiFalahati-Blog</div>
       <div className={styles.links}>
+        <ThemeToggle />
         <Link href="/">Home</Link>
         <Link href="/">Contact</Link>
         <Link href="/">About</Link>
+        <AuthLinks />
       </div>
     </div>
   );
