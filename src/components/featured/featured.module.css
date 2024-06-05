@@ -9,7 +9,7 @@
 }
 
 .post {
-  margin-top: 60px;
+  margin: 40px 0px;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -29,11 +29,12 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
 .postTitle {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .postDesc {
@@ -45,8 +46,8 @@
 .button {
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  width: max-content;
+  border-radius: 15px;
+  width: 200px;
   position: relative;
   cursor: pointer;
   background: orangered;
@@ -55,6 +56,7 @@
 
 .button::after {
   content: "";
+  border-radius: 15px;
   position: absolute;
   left: 0;
   right: 0;
@@ -67,4 +69,37 @@
 
 .button:hover::after {
   transform: scale(1, 1);
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .postTitle {
+    font-size: 22px;
+  }
+
+  .postDesc {
+    font-size: 17px;
+  }
+
+  .imgContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+  .postTitle {
+    font-size: 18px;
+  }
 }
