@@ -3,8 +3,9 @@
 }
 
 .title {
-  font-size: 96px;
+  font-size: 46px;
   font-weight: 300;
+  text-align: center;
 }
 
 .post {
@@ -42,8 +43,28 @@
 }
 
 .button {
-  padding: 16px 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   width: max-content;
+  position: relative;
+  cursor: pointer;
+  background: orangered;
+  color: #fff;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  background: #6666666b;
+  transition: all 1s;
+}
+
+.button:hover::after {
+  transform: scale(1, 1);
 }
