@@ -10,7 +10,8 @@ export default function Card() {
       </section>
       <section className={styles.textContainer}>
         <section className={styles.detail}>
-          <span className={styles.date}>11.02.2023 - </span>
+          <span className={styles.date}>11.02.2023</span>
+          <span className={styles.dash}>-</span>
           <span className={styles.category}>CLUTURE</span>
         </section>
         <Link href="/">

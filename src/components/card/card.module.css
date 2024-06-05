@@ -28,13 +28,16 @@
 
 .date {
   color: gray;
-  margin-right: 5px;
+}
+
+.dash {
+  color: gray;
+  margin: 0px 5px;
 }
 
 .category {
   color: crimson;
   font-weight: 500;
-  margin-left: 5px;
 }
 
 .desc {
