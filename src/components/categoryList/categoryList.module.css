@@ -51,3 +51,17 @@
 .image {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 640px) {
+  .category {
+    gap: 10px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .category {
+    gap: 20px;
+    width: 200px;
+  }
+}
