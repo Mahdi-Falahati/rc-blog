@@ -9,7 +9,7 @@ export default function Featured() {
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src={"/p1.jpeg"} alt="" fill className={styles.image} />
+          <Image src={"/p1.jpeg"} alt="" fill />
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>
