@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 400px) {
   .links {
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
