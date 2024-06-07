@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./menu.module.css";
 import MenuPosts from "../menuPosts/MenuPosts";
+import MenuCategories from "../menuCategories/MenuCategories";
 
 export default function Menu() {
   return (
@@ -11,41 +12,7 @@ export default function Menu() {
 
       <h2 className={styles.subtitle}>Discover by topic</h2>
       <h1 className={styles.title}>Categories</h1>
-      <section className={styles.categoryList}>
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.style}`}
-        >
-          Style
-        </Link>
-        <Link
-          href="/blog"
-          className={`${styles.categoryItem} ${styles.fashion}`}
-        >
-          Fashion
-        </Link>
-        <Link href="/blog" className={`${styles.categoryItem} ${styles.food}`}>
-          Food
-        </Link>
-        <Link
-          href="/blog"
-          className={`${styles.categoryItem} ${styles.travel}`}
-        >
-          Travel
-        </Link>
-        <Link
-          href="/blog"
-          className={`${styles.categoryItem} ${styles.culture}`}
-        >
-          Culture
-        </Link>
-        <Link
-          href="/blog"
-          className={`${styles.categoryItem} ${styles.coding}`}
-        >
-          Coding
-        </Link>
-      </section>
+      <MenuCategories />
 
       <h2 className={styles.subtitle}>Chosen by the editor</h2>
       <h1 className={styles.title}>Editors Pick</h1>
