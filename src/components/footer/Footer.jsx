@@ -6,9 +6,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <div className={styles.info}>
-        <div className={styles.logo}>
-          <h1 className={styles.logoText}>Mahdi Falahati - Blog </h1>
-        </div>
+        <h1 className={styles.logoText}>Mahdi Falahati - Blog </h1>
         <p className={styles.desc}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
           necessitatibus similique aspernatur obcaecati veritatis. Aperiam cum

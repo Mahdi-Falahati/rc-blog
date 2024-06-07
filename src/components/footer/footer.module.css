@@ -16,18 +16,13 @@
   gap: 14px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .logoText {
   font-size: 24px;
 }
 
 .desc {
   font-weight: 300;
+  text-align: justify;
 }
 
 .icons {
@@ -83,5 +78,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .logoText {
+    font-size: 19px;
   }
 }
