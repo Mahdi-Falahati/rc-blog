@@ -1,0 +1,23 @@
+.title {
+  background-color: coral;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 50px 25px;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+}
