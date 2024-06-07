@@ -15,6 +15,7 @@
 
 .responsiveMenu {
   position: absolute;
+  z-index: 99;
   top: 100px;
   left: 0;
   display: flex;
