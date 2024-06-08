@@ -1,5 +1,6 @@
 "use client";
 
+import { signOut } from "next-auth/react";
 import styles from "./authLinks.module.css";
 import Link from "next/link";
 import { useState } from "react";
@@ -19,7 +20,9 @@ export default function AuthLinks() {
           <Link href="/write" className={styles.link}>
             Write
           </Link>
-          <span style={{ cursor: "pointer" }}>Logout</span>
+          <span style={{ cursor: "pointer" }} onClick={signOut}>
+            Logout
+          </span>
         </>
       )}
 
