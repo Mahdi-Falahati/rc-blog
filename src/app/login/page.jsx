@@ -2,7 +2,7 @@
 
 import { signIn, useSession } from "next-auth/react";
 import styles from "./login.module.css";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const { status } = useSession();
