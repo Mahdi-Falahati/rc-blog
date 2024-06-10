@@ -2,31 +2,34 @@ import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
 
-export default function Card() {
+const Card = ({ key, item }) => {
   return (
-    <div className={styles.container}>
-      <section className={styles.imageContainer}>
-        <Image src="/p1.jpeg" alt="" fill className={styles.image} />
-      </section>
-      <section className={styles.textContainer}>
-        <section className={styles.detail}>
-          <span className={styles.date}>11.02.2023</span>
-          <span className={styles.dash}>-</span>
-          <span className={styles.category}>CLUTURE</span>
-        </section>
-        <Link href="/">
-          <h3>Deserunt dolor aliquip duis quis nisi commodo.</h3>
+    <div className={styles.container} key={key}>
+      {item.img && (
+        <div className={styles.imageContainer}>
+          <Image src={item.img} alt="" fill className={styles.image} />
+        </div>
+      )}
+      <div className={styles.textContainer}>
+        <div className={styles.detail}>
+          <span className={styles.date}>
+            {item.createdAt.substring(0, 10)} -{" "}
+          </span>
+          <span className={styles.category}>{item.catSlug}</span>
+        </div>
+        <Link href={`/posts/${item.slug}`}>
+          <h1>{item.title}</h1>
         </Link>
-        <p className={styles.desc}>
-          Duis fugiat nisi ut enim non enim fugiat ex fugiat veniam aliquip
-          ullamco fugiat incididunt. Cupidatat Lorem pariatur fugiat pariatur
-          fugiat cupidatat officia Lorem quis id labore laborum. Aliquip velit
-          irure tempor labore nulla cillum duis dolore.
-        </p>
-        <Link href="/" className={styles.link}>
+        <div
+          className={styles.desc}
+          dangerouslySetInnerHTML={{ __html: item?.desc.substring(0, 60) }}
+        />
+        <Link href={`/posts/${item.slug}`} className={styles.link}>
           Read More
         </Link>
-      </section>
+      </div>
     </div>
   );
-}
+};
+
+export default Card;
