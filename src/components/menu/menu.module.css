@@ -8,7 +8,12 @@
   font-size: 16px;
   font-weight: 400;
 }
-
 .title {
   font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: none;
+  }
 }
