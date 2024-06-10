@@ -14,7 +14,7 @@ const getData = async () => {
   return res.json();
 };
 
-export default CategoryList = async () => {
+const CategoryList = async () => {
   const data = await getData();
   return (
     <div className={styles.container}>
@@ -42,3 +42,5 @@ export default CategoryList = async () => {
     </div>
   );
 };
+
+export default CategoryList;
