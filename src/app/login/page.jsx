@@ -5,7 +5,7 @@ import styles from "./login.module.css";
 import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
-  const { status } = useSession();
+  const { data: session, status } = useSession();
   const router = useRouter();
 
   if (status === "loading") {
@@ -22,7 +22,9 @@ export default function LoginPage() {
         <div className={styles.socialButton} onClick={() => signIn("google")}>
           Sign in with Google
         </div>
-        <div className={styles.socialButton}>Sign in with Github</div>
+        <div className={styles.socialButton} onClick={() => signIn("gitlab")}>
+          Sign in with Gitlab
+        </div>
         <div className={styles.socialButton}>Sign in with Facebook</div>
       </div>
     </div>
